@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./dist/bundle.js" defer></script>
+
+      </head>
+      <!DOCTYPE html>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>QuickType</h1>
+        </header>
+
+        <main>
+            <div id = "TitreJeu">
+                <p>L'application pour écrire plus vite!</p>
+                <p>QuickType est une application en ligne permettant d'ecrire plus rapidement :)</p>
+            </div>
+            <div id="choixOptions">
+                <label>
+                <input type="radio" name="choix" value="mots">
+                Mots
+                </label>
+                <label>
+                <input type="radio" name="choix" value="phrases">
+                Phrases
+                </label>
+                </div>
+            <div id="wordContainer">
+                <h2>Mot proposé :</h2>
+                <p id="proposedWord">-</p>
+            </div>
+            <div id = "EntréeEtValidationTexte">
+                <input type="text" id="playerInput" placeholder="Entrez votre texte ici">
+                <button id="validateButton">Valider</button>
+            </div>
+            <div id="scoreContainer">
+                <h2>Score :</h2>
+                <span id="score">0</span>
+                <span> sur</span>
+                <span id="nbQuestions">0</span>
+            </div>
+            <div id="timerContainer">
+                <h2>Temps restant :</h2>
+                <span id="timer">01:00</span>
+            </div>
+        </main>
+    </div>
+    <footer>
+        @Copyright : Merci@2025.
+    </footer>
+</body>
+</html>
